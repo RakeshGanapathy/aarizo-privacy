@@ -20,7 +20,7 @@
     </header>
 
     <h1 class="doc-title">Privacy Policy</h1>
-    <p class="doc-meta">Last Updated: July 14, 2026</p>
+    <p class="doc-meta">Last Updated: July 24, 2026</p>
 
     <p class="intro">
       Aarizo is an offline-first application. Your information stays on your device by default.
@@ -90,10 +90,11 @@
     <section aria-labelledby="backup-heading">
       <h2 id="backup-heading">Backup &amp; Encryption</h2>
       <ul class="bullets">
-        <li>Google Drive backup is optional and disabled by default.</li>
-        <li>Every backup is encrypted (AES-256) on your device before it is exported or uploaded.</li>
-        <li>Backups remain in your own Google Drive account.</li>
-        <li>Aarizo only accesses backups when you choose to back up or restore.</li>
+        <li>Every backup — local or Google Drive — is encrypted (AES-256) on your device with a passphrase only you know, before it is saved or uploaded.</li>
+        <li>Local backups are saved to your device's own Downloads folder — a public, non-hidden location — specifically so a backup survives an app uninstall and can be found again after a reinstall.</li>
+        <li>Google Drive backup is optional and disabled by default; when enabled, backups remain in your own Google Drive account, in a hidden app-data folder only Aarizo can access.</li>
+        <li>On a fresh install, Aarizo checks your device's Downloads folder and, if you've previously granted Google Drive access, your connected account, for an existing backup — and offers to restore it before you start fresh. This check happens locally; nothing is uploaded or shared as part of it.</li>
+        <li>Aarizo only accesses backups when you choose to back up, export, share, or restore, or during that one-time fresh-install check above.</li>
       </ul>
     </section>
 
